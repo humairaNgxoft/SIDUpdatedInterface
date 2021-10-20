@@ -16,6 +16,7 @@ import { toast } from 'react-toastify'
 const Login = (props) => {
   const authContext = useContext(AuthContext);
   const [redirect, setRedirect] = useState(false);
+  const [isActiveSignUp, setIsActiveSignUp] = useState(false);
   const [isLogginActive, setIsLogginActive] = useState(true)
   const history = useHistory();
 
@@ -23,6 +24,9 @@ const Login = (props) => {
   const [password, setPassword] = useState('')
 
   const { containersRef } = props;
+  const gotoSignup = async (value) => {
+    setIsActiveSignUp(value)
+  }
   const handleSubmit = async () => {
     const frmdetails = {
       email: email,
@@ -84,7 +88,7 @@ const Login = (props) => {
       //     </button>
       //   </div>
       // </div>
-      <div className="containers" >
+      <div className={"containers " + (isActiveSignUp ? ' sign-up-mode' : '')} >
         <div className="forms-containers">
           <div className="signin-signup">
             <form action="#" className="sign-in-form">
@@ -168,13 +172,25 @@ const Login = (props) => {
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
                 ex ratione. Aliquid!
               </p>
-              <button className="btn transparent" id="sign-up-btn" >
+              <button className="btn transparent" id="sign-up-btn" onClick={()=>{gotoSignup(true)}} >
                 Sign up
               </button>
             </div>
             <img src={login} className="image" alt="" />
           </div>
-
+          <div className="panel right-panel">
+          <div className="content">
+            <h3>One of us ?</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+              laboriosam ad deleniti.
+            </p>
+            <button className="btn transparent" id="sign-in-btn"  onClick={()=>{gotoSignup(false)}}>
+              Sign in
+            </button>
+          </div>
+          <img src="img/register.svg" className="image" alt="" />
+        </div>
         </div>
       </div>
 
