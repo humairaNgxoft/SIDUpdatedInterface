@@ -1,0 +1,246 @@
+//Custom Fonts
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+//Login Main Container
+.login {
+  width: 27em;
+  height: 40em;
+  //min-height: 44em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  position: relative;
+  z-index: 99;
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 12px 2px rgba(15, 15, 15, 0.2);
+    border-radius: 4px;
+    position: relative;
+    z-index: 99;
+    height: 100%;
+    z-index: 99;
+    padding: 17px 10px;
+    //transition: transform 200ms ease-in-out;
+    width: 70%!important;
+    margin-right: 22px!important;
+    margin-left: auto!important;
+  }
+  .sidenav---sidenav---_2tBP.sidenav---expanded---1KdUL {
+    min-width: 19%!important;
+}
+  .right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90%;
+    background-color: #3498db;
+    width: 100%;
+    position: absolute;
+    right: -34%;
+    border-radius: 6px;
+    z-index: 1;
+    transition: all 400ms ease-in-out;
+    cursor: pointer;
+    box-shadow: 0px 0px 12px 2px rgba(15, 15, 15, 0.281);
+
+    &.right {
+      right: -40%;
+      align-items: flex-end;
+      &:hover {
+        right: -45%;
+      }
+    }
+    &.left {
+      right: 40%;
+      align-items: flex-start;
+      &:hover {
+        right: 45%;
+      }
+    }
+
+    .text {
+      font-size: 21px;
+      font-weight: 500;
+      color: #fff;
+      margin-right: 3em;
+      margin-left: 3em;
+    }
+  }
+}
+
+//Button
+// .btn {
+//   font-size: 21px;
+//   padding: 5px 20px;
+//   border: 0;
+//   background-color: #3498db;
+//   color: #fff;
+//   border-radius: 3px;
+//   transition: all 250ms ease-in-out;
+//   cursor: pointer;
+//   &:hover {
+//     background-color: #2386c8;
+//   }
+//   &:focus {
+//     outline: none;
+//   }
+// }
+.galryBox{
+  height: 700px !important;
+}
+.book22{
+  width: 100%;
+  border-radius: 25px;
+  
+  
+}
+.book{
+  width: 100%;
+  height: 301px;
+  border-radius: 25px;
+  
+}
+.imageBox{
+  padding: 10px;
+  
+}
+
+.cardbox{
+  flex-direction: unset !important;
+}
+.carimg{
+  width: 35% !important;
+  padding: 10px;
+  border-radius: 25px !important;
+  
+}
+.CardRowImage{
+  width: 100%;
+  height: 142px;
+  padding: 10px;
+  border-radius: 25px !important;
+  
+}
+.AllButton{
+  width: 50px;
+  height: 131px;
+  background: #ffd55d !important;
+  border: 1px solid #ffd55d !important;
+  
+}
+.AllbtnCol{
+  text-align: center;
+  padding: 10px
+  ;
+}
+.ofcanvasBox{
+  background: cornflowerblue !important;
+  height: auto;
+}
+.offcanvas-start {
+  top: 0;
+  left: 5px !important;
+  width: 65px !important;
+  border-right: 1px solid rgba(0,0,0,.2);
+  transform: translateX(-100%);
+  border-radius: 25px;
+  height: 95%;
+  // height: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  
+}
+.mainBox{
+  margin-top: 4%;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+.NavButton{
+  text-align: center !important;
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+  margin-bottom: 25px !important;
+}
+.NavButton:active:focus{
+  border: 2px solid black !important;
+  background: black;
+}
+.OfcanvsBody{
+  padding-left: 10px !important;
+  padding-right: 0 !important;
+  margin-top: 100%;
+}
+.OfcanvsBodyHeader{
+  padding-left: 10px !important;
+  padding-right: 0 !important;
+  margin-top: 100%;
+}
+.icnImage{
+  background: white;
+  padding: 10px;
+  width: 45px;
+  align-items: center;
+  border-radius: 15px;
+}
+.icnImage:hover{
+  background: rgb(204, 10, 20);
+  padding: 10px;
+  width: 45px;
+  align-items: center;
+  border-radius: 15px;
+}
+thead th{
+  text-align: center;
+
+}
+thead{
+  background-color: #92cbf1;
+  color: white;
+}
+// .app{
+
+// 	background-color: #ffffff;
+// }
